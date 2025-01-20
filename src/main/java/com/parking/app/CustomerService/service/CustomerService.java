@@ -11,5 +11,5 @@ public interface CustomerService {
     public Customer createCustomer(Customer customer);
     public Customer updateCustomer(Customer customer);
     public  void deleteCustomer(Long id);
-    public List<Customer> findByBooking(Booking booking);
+    //public List<Customer> findByBooking(Booking booking);
 }

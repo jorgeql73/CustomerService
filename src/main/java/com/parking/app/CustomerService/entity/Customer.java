@@ -14,8 +14,9 @@ public class Customer {
     private Long id;
     private String name;
 
-    @ManyToOne(fetch = FetchType.LAZY)//solo se carga en el momento que se requiera
+   /* @ManyToOne(fetch = FetchType.LAZY)//solo se carga en el momento que se requiera
     @JoinColumn(name = "booking_id")//Dato con el que se mapea en la tabla categoria
     @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
-    private Booking booking;
+    @Transient
+    private Booking booking;*/
 }
