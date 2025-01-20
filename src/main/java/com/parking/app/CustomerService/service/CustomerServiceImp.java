@@ -49,8 +49,8 @@ public class CustomerServiceImp implements CustomerService{
         }
     }
 
-    @Override
+    /*@Override
     public List<Customer> findByBooking(Booking booking) {
         return (List<Customer>) customerRepository.findByBooking(booking);
-    }
+    }*/
 }
