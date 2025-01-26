@@ -39,4 +39,9 @@ public class CustomerController {
         return ResponseEntity.status(HttpStatus.CREATED).body(customerCreated);
     }
 
+    @GetMapping(value = "/serch-bookings/{idCustomer}")
+    public ResponseEntity<?> findBookingsByIdCustomer(@PathVariable Long idCustomer){
+        return ResponseEntity.ok(customerService.findBookingsByIdCustomer(idCustomer));
+    }
+
 }
